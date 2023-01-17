@@ -8,6 +8,7 @@ export const config = {
   runtime: "edge",
 };
 
+'use client'
 const handler = async (req: NextRequest): Promise<Response> => {
   const { prompt } = (await req.json()) as {
     prompt?: string;
