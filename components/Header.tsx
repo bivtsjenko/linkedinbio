@@ -11,7 +11,7 @@ export default function Header() {
         </h1>
       </Link>
       <a
-        href="https://vercel.com/gitintouch/linkedinbio"
+        href="https://vercel.com/templates/next.js/linkedin-bio"
         target="_blank"
         rel="noreferrer"
       >

@@ -15,20 +15,20 @@ class MyDocument extends Document {
             property="og:description"
             content="Generate your next Linkedin bio in seconds."
           />
-          <meta property="og:title" content="Linkedin Bio Generator" />
+          <meta property="og:title" content="Twitter Bio Generator" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Linkedin Bio Generator" />
+          <meta name="twitter:title" content="Twitter Bio Generator" />
           <meta
             name="twitter:description"
             content="Generate your next Linkedin bio in seconds."
           />
           <meta
             property="og:image"
-            content="https://twitterbio.com/logo.png"
+            content="https://twitterbio.com/og-image.png"
           />
           <meta
             name="twitter:image"
-            content="https://twitterbio.com/logo.png"
+            content="https://twitterbio.com/og-image.png"
           />
         </Head>
         <body>

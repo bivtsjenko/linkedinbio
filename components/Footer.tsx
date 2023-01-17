@@ -37,7 +37,7 @@ export default function Footer() {
           </svg>
         </Link>
         <Link
-          href="https://github.com/bivtsjenko"
+          href="https://github.com/bivtsjenko/linked"
           className="group"
           aria-label="TaxPal on GitHub"
         >

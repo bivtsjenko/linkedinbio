@@ -23,10 +23,10 @@ const Home: NextPage = () => {
 
   const prompt =
     vibe === "Funny"
-      ? `Generate 2 funny Linkedin bios with no hashtags and clearly labeled "1." and "2.". Make sure there is a joke in there and it's a little ridiculous. Make sure each generated bio is at max 20 words and base it on this context: ${bio}${
+      ? `Generate 2 funny twitter bios with no hashtags and clearly labeled "1." and "2.". Make sure there is a joke in there and it's a little ridiculous. Make sure each generated bio is at max 20 words and base it on this context: ${bio}${
           bio.slice(-1) === "." ? "" : "."
         }`
-      : `Generate 2 ${vibe} Linkedin bios with no hashtags and clearly labeled "1." and "2.". Make sure each generated bio is at least 14 words and at max 20 words and base them on this context: ${bio}${
+      : `Generate 2 ${vibe} twitter bios with no hashtags and clearly labeled "1." and "2.". Make sure each generated bio is at least 14 words and at max 20 words and base them on this context: ${bio}${
           bio.slice(-1) === "." ? "" : "."
         }`;
 
@@ -145,7 +145,7 @@ const Home: NextPage = () => {
             rows={4}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5"
             placeholder={
-              "e.g. Senior Developer Advocate @linkedin. Traveling around the world, Footie, and React / Next.js. Writing blogs at me.blog.com."
+              "e.g. Senior Developer Advocate @vercel. Tweeting about web development, AI, and React / Next.js. Writing me.blog.com."
             }
           />
           <div className="flex mb-5 items-center space-x-3">
