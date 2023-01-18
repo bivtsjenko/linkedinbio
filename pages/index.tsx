@@ -40,7 +40,7 @@ const Home: NextPage = () => {
                 prompt,
             }),
         });
-        console.log("Edge function returned.", prompt);
+
 
         if (!response.ok) {
             throw new Error(response.statusText);
@@ -61,6 +61,7 @@ const Home: NextPage = () => {
         while (!done) {
             const {value, done: doneReading} = await reader.read();
             done = doneReading;
+            console.log("value", value)
             const newValue = decoder
                 .decode(value)
                 .replaceAll("data: ", "")
@@ -95,7 +96,10 @@ const Home: NextPage = () => {
                         throw new Error("Something went wrong.");
                     }
 
+
+
                     const choice = json.choices[0];
+                    console.log("choice.", choice.text);
                     setGeneratedBios((prev) => prev + choice.text);
                 } catch (error) {
                     tempState = newVal;
