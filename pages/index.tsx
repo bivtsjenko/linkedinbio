@@ -67,7 +67,6 @@ const Home: NextPage = () => {
                 .replaceAll("data: ", "")
                 .split("\n\n")
                 .filter(Boolean);
-            console.log("decoded value", newValue)
             if (tempState) {
                 newValue[0] = tempState + newValue[0];
                 tempState = "";
@@ -99,7 +98,6 @@ const Home: NextPage = () => {
 
 
                     const choice = json.choices[0];
-                    console.log("choice.", choice.text);
                     setGeneratedBios((prev) => prev + choice.text);
                 } catch (error) {
                     tempState = newVal;
