@@ -15,6 +15,7 @@ const handler = async (req: NextRequest): Promise<Response> => {
   };
 
   if (!prompt) {
+    console.log("NO PROMPT")
     return new Response("No prompt in the request", { status: 400 });
   }
 
@@ -37,9 +38,12 @@ const handler = async (req: NextRequest): Promise<Response> => {
     },
     method: "POST",
     body: JSON.stringify(payload),
-  });
+  })
+
 
   const data = res.body;
+
+  console.log("data", data)
 
   return new Response(data, {
     headers: { "Content-Type": "application/json; charset=utf-8" },
