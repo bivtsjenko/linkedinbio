@@ -109,7 +109,7 @@ const Home: NextPage = () => {
     return (
         <div className="flex max-w-5xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
             <Head>
-                <title>Linkedin Generator</title>
+                <title>Linkedin Bio Generator</title>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
