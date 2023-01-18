@@ -40,7 +40,7 @@ const Home: NextPage = () => {
                 prompt,
             }),
         });
-        console.log("Edge function returned.");
+        console.log("Edge function returned.", prompt);
 
         if (!response.ok) {
             throw new Error(response.statusText);
@@ -117,7 +117,7 @@ const Home: NextPage = () => {
             <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
 
                 <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
-                    Generate your next Linkedin bio in seconds
+                    Generate1 your next Linkedin bio in seconds
                 </h1>
                 <div className="max-w-xl">
                     <div className="flex mt-10 items-center space-x-3">
