@@ -61,13 +61,13 @@ const Home: NextPage = () => {
         while (!done) {
             const {value, done: doneReading} = await reader.read();
             done = doneReading;
-            console.log("value", value)
+
             const newValue = decoder
                 .decode(value)
                 .replaceAll("data: ", "")
                 .split("\n\n")
                 .filter(Boolean);
-
+            console.log("decoded value", newValue)
             if (tempState) {
                 newValue[0] = tempState + newValue[0];
                 tempState = "";
